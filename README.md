@@ -6,10 +6,10 @@ Utilizaremos a tabela única de Financial Sample para criar as tabelas dimensão
 2. Na criação das demais tabelas foi utilizado apenas a seleção dos dados nescessários para cada uma das tabelas e exclusão das demais colunas.
 3. Foi feito também a criação da coluna ID_Produto em todas as tabelas para conseguir realizar os relacionamentos de forma saudável e evitando a repetição de colunas desnecessárias;
 4. Depois, através da linguagem DAX, foi criada uma tabela calendário com os seguintes dados:
-      01. Date - Comando: DATE = CALENDARAUTO(12);
-      02. Year - Comando: Year = YEAR(D_Calendar[DATE]);
-      03. Month Number - Comando: Month Number = MONTH(D_Calendar[DATE]);
-      04. Week Number - Comando: Week Number = WEEKNUM(D_Calendar[DATE]);
-      05. Day of the week - Comando: Day of the week = WEEKDAY(D_Calendar[DATE]);
-      06. Day of the week2 - Comando: Day of the week2 = FORMAT(D_Calendar[DATE], "DDDD");
+      1. Date - Comando: DATE = CALENDARAUTO(12);
+      2. Year - Comando: Year = YEAR(D_Calendar[DATE]);
+      3. Month Number - Comando: Month Number = MONTH(D_Calendar[DATE]);
+      4. Week Number - Comando: Week Number = WEEKNUM(D_Calendar[DATE]);
+      5. Day of the week - Comando: Day of the week = WEEKDAY(D_Calendar[DATE]);
+      6. Day of the week2 - Comando: Day of the week2 = FORMAT(D_Calendar[DATE], "DDDD");
 5. Por fim, foi montado os Star Schema onde as tabelas de dimensão são relacionadas com a tabela fato.
