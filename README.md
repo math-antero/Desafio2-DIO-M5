@@ -6,6 +6,7 @@ Utilizaremos a tabela única de Financial Sample para criar as tabelas dimensão
 2. Na criação das demais tabelas foi utilizado apenas a seleção dos dados nescessários para cada uma das tabelas e exclusão das demais colunas.
 3. Foi feito também a criação da coluna ID_Produto em todas as tabelas para conseguir realizar os relacionamentos de forma saudável e evitando a repetição de colunas desnecessárias;
 4. Depois, através da linguagem DAX, foi criada uma tabela calendário com os seguintes dados:
+   
       I. Date - Comando: DATE = CALENDARAUTO(12);
       II. Year - Comando: Year = YEAR(D_Calendar[DATE]);
       III. Month Number - Comando: Month Number = MONTH(D_Calendar[DATE]);
